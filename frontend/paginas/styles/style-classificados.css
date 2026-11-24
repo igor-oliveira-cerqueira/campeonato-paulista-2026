@@ -1,0 +1,52 @@
+/* ===== Tabela de classificados ===== */
+
+.tabela-wrapper {
+  margin-top: 28px;
+  overflow-x: auto;
+}
+
+.tabela-times {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-times th,
+.tabela-times td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela-times th {
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabela-times td:first-child,
+.tabela-times th:first-child {
+  width: 64px;
+  text-align: center;
+}
+
+.tabela-times td:last-child,
+.tabela-times th:last-child {
+  text-align: right;
+}
+
+.tabela-times tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tabela-times tbody tr:first-child td:first-child {
+  color: var(--destaque);
+  font-weight: 700;
+}
+
+.mensagem-erro {
+  margin-top: 12px;
+  color: var(--destaque);
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Oito Melhores</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="../js/grafico-oito-melhores.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Cabeçalho -->
+        <header class="topo">
+            <a class="btn-voltar" href="../index.html">← Voltar</a>
+            <h1 class="title">Oito Melhores Times</h1>
+            <div class="topo-espaco"></div>
+        </header>
+
+        <!-- Menu -->
+        <div class="nav-container">
+            <nav class="input" aria-label="Menu principal">
+                <a class="value home" href="../index.html" aria-label="Home">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3 11.5 12 4l9 7.5M5.5 10v9.5a.5.5 0 0 0 .5.5h4v-5.5h4V20h4a.5.5 0 0 0 .5-.5V10"></path>
+                    </svg>
+                </a>
+                <a class="value ativo" href="./oitoMelhores.html">Oito melhores</a>
+                <a class="value" href="./timesSG.html">Times SG</a>
+                <a class="value" href="./classificados.html">Classificados</a>
+                <a class="value" href="./desempenho.html">Desempenho</a>
+                <a class="value" href="./buscarTime.html">Buscar time</a>
+            </nav>
+        </div>
+
+        <!-- Conteúdo -->
+        <main class="card-grafico">
+            <section class="grafico-card">
+                <div class="grafico-cabecalho">
+                    <h2>Ranking</h2>
+                    <p>Os oito times com melhor desempenho</p>
+                </div>
+
+                <div class="grafico-container">
+                    <canvas id="grafico8melhores"></canvas>
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+
+</html>
